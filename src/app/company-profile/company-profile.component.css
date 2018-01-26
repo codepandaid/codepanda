@@ -1,8 +1,128 @@
 /* Code Panda CSS */
 
 #imageCoder{
-    height: 120px;
-    width: 120px;
+    height: 400px;
+    width: 400px;
 
     border-radius: 50%;
+
+    position: absolute;
+    top: 200px;
+    left: 35%;
+}
+
+/* 3 Panda Paling Atas */
+
+#pandaCoder_1{
+    height: 100px;
+    width: 100px;
+
+    border-radius: 50%;
+
+    position: relative;
+    top: 60px;
+    left: 35%;
+}
+
+#pandaCoder_2{
+    height: 100px;
+    width: 100px;
+
+    border-radius: 50%;
+
+    position: relative;
+    top: 20px;
+    left: 38%;
+}
+
+#pandaCoder_3{
+    height: 100px;
+    width: 100px;
+
+    border-radius: 50%;
+
+    position: relative;
+    top: 60px;
+    left: 41%;
+}
+
+/* 2 Panda Kiri  */
+
+#pandaCoder_4{
+    height: 100px;
+    width: 100px;
+
+    border-radius: 50%;
+
+    position: relative;
+    top: 100px;
+    left: 27.5%;
+}
+
+#pandaCoder_5{
+    height: 100px;
+    width: 100px;
+
+    border-radius: 50%;
+
+    position: relative;
+    top: 100px;
+    left: 56.5%;
+}
+
+#pandaCoder_6{
+    height: 100px;
+    width: 100px;
+
+    border-radius: 50%;
+
+    position: relative;
+    top: 160px;
+    left: 27.5%;
+}
+
+#pandaCoder_7{
+    height: 100px;
+    width: 100px;
+
+    border-radius: 50%;
+
+    position: relative;
+    top: 160px;
+    left: 56.5%;
+}
+
+/* 3 Panda Paling Bawah */
+
+#pandaCoder_8{
+    height: 100px;
+    width: 100px;
+
+    border-radius: 50%;
+
+    position: relative;
+    top: 190px;
+    left: 35%;
+}
+
+#pandaCoder_9{
+    height: 100px;
+    width: 100px;
+
+    border-radius: 50%;
+
+    position: relative;
+    top: 230px;
+    left: 39%;
+}
+
+#pandaCoder_10{
+    height: 100px;
+    width: 100px;
+
+    border-radius: 50%;
+
+    position: relative;
+    top: 190px;
+    left: 42%;
 }

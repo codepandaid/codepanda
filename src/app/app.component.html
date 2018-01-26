@@ -2,13 +2,14 @@
 
 <mat-toolbar color="primary">
   <mat-toolbar-row>
+    
     <span>codepanda</span>
 
     <span class="example-spacer"></span>
     
     <button mat-button routerLink="">Home</button>
-    <button mat-button routerLink="company-profile">Company Profile</button>
-    <button mat-button routerLink="about/48">About</button>
+    <button mat-button routerLink="profile">Company Profile</button>
+    <button mat-button routerLink="about">About</button>
 
 
     <button mat-button (click)="openDialog()">wujudkan</button>
@@ -16,5 +17,7 @@
 
   </mat-toolbar-row>
 </mat-toolbar>
+
+
 
 <router-outlet></router-outlet>
