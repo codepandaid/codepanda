@@ -40,16 +40,16 @@ import { OrderDialogComponent } from './order-dialog/order-dialog.component';
       },      
       
       {
-        path: 'company-profile', 
+        path: 'profile', 
         component: CompanyProfileComponent
       },
       
       {
-        path: 'about/:id',
+        path: 'about',
         component: AboutComponent
       },
       {
-        path: 'order-dialog', 
+        path: 'order', 
         component: OrderDialogComponent
       }
     ])
