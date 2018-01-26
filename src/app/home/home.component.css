@@ -1,3 +1,22 @@
+.background{
+    background-color: #332c2b;
+    margin-top: 20px;
+}
+.boxTitle{
+    position: relative;
+    top: 20px;
+    left: 20px;
+    width: 15vw;
+
+    text-align: center;
+
+    padding: 1vw;
+    border: 5px solid white;
+    color: white;
+    font-size: 5vw;
+    font-weight: 500;
+}
+
 
 /* Default CSS From Couserat.com */
 

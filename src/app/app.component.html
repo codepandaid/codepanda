@@ -1,7 +1,30 @@
 <!--The content below is only a placeholder and can be replaced.-->
+<div>
+  <mat-toolbar>
 
-<mat-toolbar color="primary">
-  <mat-toolbar-row>
+    <mat-toolbar-row>
+
+      <div class="slogan">
+        <span class="sloganName pandaBlack">code<b>panda</b></span>
+        <br>
+        <span class="sloganSlogan pandaBlack">we are here</span>
+      </div>
+      <div class="whiteFill">
+
+      </div>
+
+      <div class="logo">
+        <img class="logoImg" src="assets/pict/logo.png" alt="codepanda">
+      </div>
+
+      <div class="order">    
+          <span class="orderSlogan pandaBlack">punya konsep?</span>
+          <button mat-button (click)="openDialog()" class="orderButton pandaBlack">wujudkan</button>
+      </div>
+
+    </mat-toolbar-row>
+  
+  <!-- <mat-toolbar-row>
     
     <span>codepanda</span>
 
@@ -15,9 +38,9 @@
     <button mat-button (click)="openDialog()">wujudkan</button>
 
 
-  </mat-toolbar-row>
-</mat-toolbar>
-
+  </mat-toolbar-row> -->
+  </mat-toolbar>
+</div>
 
 
 <router-outlet></router-outlet>
