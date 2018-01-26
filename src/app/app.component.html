@@ -1,8 +1,21 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<ul>
-  <li><a routerLink="">Home</a></li>
-  <li><a routerLink="company-profile">Company Profile</a></li>
-  <li><a routerLink="about/48">About</a></li>
-</ul>
+
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span>codepanda</span>
+
+    <span class="example-spacer"></span>
+    
+    <button mat-button routerLink="">Home</button>
+    <button mat-button routerLink="company-profile">Company Profile</button>
+    <button mat-button routerLink="about/48">About</button>
+
+
+    <button mat-button (click)="openDialog()">wujudkan</button>
+
+
+  </mat-toolbar-row>
+</mat-toolbar>
+
 
 <router-outlet></router-outlet>

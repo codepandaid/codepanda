@@ -3,26 +3,34 @@ import { NgModule } from '@angular/core';
 
 
 import { DataService } from './data.service';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
+
+
 import { HomeComponent } from './home/home.component';
 import { CompanyProfileComponent } from './company-profile/company-profile.component';
 import { AboutComponent } from './about/about.component';
-import { RouterModule, Routes} from '@angular/router'
 
+
+import { RouterModule, Routes} from '@angular/router'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './material.module';
+import { FormsModule } from '@angular/forms';
+import { OrderDialogComponent } from './order-dialog/order-dialog.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     CompanyProfileComponent,
-    AboutComponent
+    AboutComponent,
+    OrderDialogComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     BrowserAnimationsModule,
+    MaterialModule,
+    FormsModule,
 
     // For Router or Page Navigation
     RouterModule.forRoot([
@@ -39,6 +47,10 @@ import { RouterModule, Routes} from '@angular/router'
       {
         path: 'about/:id',
         component: AboutComponent
+      },
+      {
+        path: 'order-dialog', 
+        component: OrderDialogComponent
       }
     ])
 
@@ -47,3 +59,7 @@ import { RouterModule, Routes} from '@angular/router'
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
+// CLI Command
+//generater new component: ng generate component order-dialog --module=app.module

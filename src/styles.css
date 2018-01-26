@@ -1,10 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 
+/* tema dari angular */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+
 /* Default CSS From Couserat.com */
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,700');
 
-body {
+/* body {
     background: #2E9CE6;
     padding: 3em;
     font-family: 'Montserrat', 'Arial';
@@ -25,4 +29,4 @@ ul li a {
 a {
     color: #fff;
     text-decoration: none;
-}
+} */
