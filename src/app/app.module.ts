@@ -16,6 +16,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 import { FormsModule } from '@angular/forms';
 import { OrderDialogComponent } from './order-dialog/order-dialog.component';
+import { CoderModalComponent } from './coder-modal/coder-modal.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { OrderDialogComponent } from './order-dialog/order-dialog.component';
     HomeComponent,
     CompanyProfileComponent,
     AboutComponent,
-    OrderDialogComponent
+    OrderDialogComponent,
+    CoderModalComponent
   ],
   imports: [
     BrowserModule,
@@ -52,6 +54,11 @@ import { OrderDialogComponent } from './order-dialog/order-dialog.component';
       {
         path: 'order', 
         component: OrderDialogComponent
+      },
+
+      {
+        path: 'coder', 
+        component: CoderModalComponent
       }
     ])
 

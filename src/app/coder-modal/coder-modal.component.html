@@ -1,0 +1,47 @@
+
+<div>
+  <mat-card class="container_1" *ngFor="let pandaCoder of coders"
+  [class.selected]="pandaCoder === selectedPanda">  
+      <h2 class="BG" >{{ pandaCoder.nama | uppercase }} Characteristic</h2>
+
+      <div class="container_2">
+        <div>
+            <img id="pandaCoder" src="assets/pict/pandaCoder.png"/> 
+        </div>
+      
+        <div *ngIf="selectedPanda">
+          <div>
+              <p id="subtitle">ID :</p>
+              <p id="text">{{ selectedPanda.id }}</p>
+          </div>
+
+          <div>
+              <p id="subtitle">Nama :</p>
+              <p id="text">{{ selectedPanda.nama }}</p>
+          </div>
+
+          <div>
+              <p id="subtitle">Spesies :</p>
+              <p id="text">{{ selectedPanda.spesies }}</p>
+          </div>
+
+          <div>
+              <p id="subtitle">Background Story :</p>
+              <p id="text">{{ selectedPanda.backgroundStory }}</p>
+          </div>
+
+          <div>
+              <p id="subtitle">Skill :</p>
+              <p id="text">{{ selectedPanda.skill }}</p>
+          </div>
+        </div>        
+    </div>
+    
+    <!-- <input matInput [(ngModel)]="answer" placeholder="Name"> -->
+    
+    <br>
+
+  </mat-card>
+
+</div>
+  

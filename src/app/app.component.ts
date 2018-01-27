@@ -1,6 +1,7 @@
 import { Component, Inject } from '@angular/core';
 import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material';
 import { OrderDialogComponent } from './order-dialog/order-dialog.component';
+import { CoderModalComponent } from './coder-modal/coder-modal.component';
 
 @Component({
   selector: 'app-root',
@@ -21,7 +22,7 @@ export class AppComponent {
   animal: string='unta';
   name: string='Vito Rizki Imanda';
 
-  constructor(public dialog: MatDialog) {}
+  constructor(public dialog: MatDialog, public coder: MatDialog) {}
 
 
   openDialog(): void {
