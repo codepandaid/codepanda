@@ -1,4 +1,56 @@
-<mat-card>
+<!-- <mat-card>
+    <h1>id: {{ data.id }}</h1>
     <h1>nama: {{ data.name }}</h1>
     <h1>hewan: {{ data.animal }}</h1>
-</mat-card>
+    <p >{{deskripsi}}</p>
+</mat-card> -->
+
+
+
+<div>
+  <mat-card class="container_1">  
+      <h2 class="BG" >Characteristic</h2>
+
+      <div class="container_2">
+        <div>
+            <img id="pandaCoder" src="assets/pict/pandaCoder.png"/> 
+        </div>
+      
+        <div>
+          <div>
+              <p id="subtitle">ID :</p>
+              <p id="text">{{ data.id }}</p>
+          </div>
+
+          <div>
+              <p id="subtitle">Nama :</p>
+              <p *ngIf="data.id=='1'" id="text">Vito Rizki Imanda</p>
+              <p *ngIf="data.id=='2'" id="text">RF Taurus</p>
+              <p *ngIf="data.id=='3'" id="text">awawawwaw</p>
+          </div>
+<!-- 
+          <div>
+              <p id="subtitle">Spesies :</p>
+              <p id="text">{{ selectedPanda.spesies }}</p>
+          </div>
+
+          <div>
+              <p id="subtitle">Background Story :</p>
+              <p id="text">{{ selectedPanda.backgroundStory }}</p>
+          </div>
+
+          <div>
+              <p id="subtitle">Skill :</p>
+              <p id="text">{{ selectedPanda.skill }}</p>
+          </div> -->
+        </div>        
+    </div>
+    
+    <!-- <input matInput [(ngModel)]="answer" placeholder="Name"> -->
+    
+    <br>
+
+  </mat-card>
+
+</div>
+  

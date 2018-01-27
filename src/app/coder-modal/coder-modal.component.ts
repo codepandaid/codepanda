@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
 import { PandaCoder } from './coder';
 import { CODERS } from './mock-coder';
@@ -21,7 +21,10 @@ export class CoderModalComponent implements OnInit {
   //   skill: "HTML, CSS"
   // }
 
-  constructor(public coder: MatDialog) { }
+  constructor(public coder: MatDialog,
+    public dialog: MatDialog, 
+    public dialogRef: MatDialogRef<CoderModalComponent>,
+    @Inject(MAT_DIALOG_DATA) public data: any) { }
 
   ngOnInit() {
   }

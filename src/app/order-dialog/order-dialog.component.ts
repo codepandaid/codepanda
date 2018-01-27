@@ -10,11 +10,15 @@ export class OrderDialogComponent implements OnInit {
 
   name:any;
 
+  deskripsi:string='';
+
   constructor(public dialog: MatDialog, 
     public dialogRef: MatDialogRef<OrderDialogComponent>,
     @Inject(MAT_DIALOG_DATA) public data: any) {    }
 
   ngOnInit() {
   }
+
+
 
 }

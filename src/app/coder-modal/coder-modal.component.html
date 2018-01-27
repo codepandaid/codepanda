@@ -1,7 +1,6 @@
 
 <div>
-  <mat-card class="container_1" *ngFor="let pandaCoder of coders"
-  [class.selected]="pandaCoder === selectedPanda">  
+  <mat-card class="container_1">  
       <h2 class="BG" >{{ pandaCoder.nama | uppercase }} Characteristic</h2>
 
       <div class="container_2">
@@ -9,15 +8,15 @@
             <img id="pandaCoder" src="assets/pict/pandaCoder.png"/> 
         </div>
       
-        <div *ngIf="selectedPanda">
+        <div>
           <div>
               <p id="subtitle">ID :</p>
-              <p id="text">{{ selectedPanda.id }}</p>
+              <p id="text">{{ data.id }}</p>
           </div>
 
           <div>
               <p id="subtitle">Nama :</p>
-              <p id="text">{{ selectedPanda.nama }}</p>
+              <p id="text">{{ data.name }}</p>
           </div>
 
           <div>
