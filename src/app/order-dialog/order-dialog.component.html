@@ -9,17 +9,17 @@
 
 <div>
   <mat-card class="container_1">  
-      <h2 class="BG" >Characteristic</h2>
+      <h2 *ngIf="data.id=='1'" class="BG" >Vito Rizki Imanda Characteristic</h2>
 
       <div class="container_2">
         <div>
-            <img id="pandaCoder" src="assets/pict/pandaCoder.png"/> 
+            <img *ngIf="data.id=='1'" id="pandaCoder" src="assets/pict/pandaCoder.png"/> 
         </div>
       
         <div>
           <div>
               <p id="subtitle">ID :</p>
-              <p id="text">{{ data.id }}</p>
+              <p *ngIf="data.id=='1'" id="text">PC-001</p>
           </div>
 
           <div>
