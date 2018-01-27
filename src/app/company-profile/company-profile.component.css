@@ -20,8 +20,8 @@
     border-radius: 50%;
 
     position: relative;
-    top: 60px;
-    left: 35%;
+    top: 75px;
+    left: 33.5%;
 }
 
 #pandaCoder_2{
@@ -42,8 +42,8 @@
     border-radius: 50%;
 
     position: relative;
-    top: 60px;
-    left: 41%;
+    top: 75px;
+    left: 43%;
 }
 
 /* 2 Panda Kiri  */
@@ -101,8 +101,8 @@
     border-radius: 50%;
 
     position: relative;
-    top: 190px;
-    left: 35%;
+    top: 180px;
+    left: 33.5%;
 }
 
 #pandaCoder_9{
@@ -123,6 +123,10 @@
     border-radius: 50%;
 
     position: relative;
-    top: 190px;
-    left: 42%;
+    top: 180px;
+    left: 43%;
+}
+
+[hidden]{
+    display: none !important;
 }
