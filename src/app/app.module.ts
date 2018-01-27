@@ -33,6 +33,7 @@ import { CoderModalComponent } from './coder-modal/coder-modal.component';
     BrowserAnimationsModule,
     MaterialModule,
     FormsModule,
+    
 
     // For Router or Page Navigation
     RouterModule.forRoot([
@@ -63,8 +64,9 @@ import { CoderModalComponent } from './coder-modal/coder-modal.component';
 
   ],
   providers: [DataService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
+
 export class AppModule { }
 
 
