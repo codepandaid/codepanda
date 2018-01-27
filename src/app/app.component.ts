@@ -21,9 +21,6 @@ export class AppComponent {
 
   animal: string;
   name: string;
-  id: number;
-  bio: HTMLTextAreaElement;
-  skill: HTMLTextAreaElement;
 
   constructor(public dialog: MatDialog, public coder: MatDialog) {}
 
@@ -37,21 +34,6 @@ export class AppComponent {
     dialogRef.afterClosed().subscribe(result => {
       console.log('The dialog was closed');
       this.animal = result;
-    });
-  }
-
-  openCoder(): void {
-    let dialogRef = this.coder.open(CoderModalComponent, {
-      width: '90vw',
-      data: { id: this.id ,name: this.name, bio: this.bio, skill: this.skill }
-    });
-
-    dialogRef.afterClosed().subscribe(result => {
-      console.log('The coder information was closed');
-      this.id = result;
-      this.name = result;
-      this.bio = result;
-      this.skill = result;
     });
   }
 }

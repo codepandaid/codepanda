@@ -7,7 +7,7 @@
     border-radius: 50%;
 
     position: absolute;
-    top: 200px;
+    top: 230px;
     left: 35%;
 }
 
@@ -19,9 +19,12 @@
 
     border-radius: 50%;
 
-    position: relative;
-    top: 75px;
+    position: absolute;
+    top: 165px;
     left: 33.5%;
+
+    cursor: pointer;
+
 }
 
 #pandaCoder_2{
@@ -30,9 +33,11 @@
 
     border-radius: 50%;
 
-    position: relative;
-    top: 20px;
-    left: 38%;
+    position: absolute;
+    top: 110px;
+    left: 46%;
+
+    cursor: pointer;
 }
 
 #pandaCoder_3{
@@ -41,9 +46,11 @@
 
     border-radius: 50%;
 
-    position: relative;
-    top: 75px;
-    left: 43%;
+    position: absolute;
+    top: 165px;
+    left: 58.5%;
+
+    cursor: pointer;
 }
 
 /* 2 Panda Kiri  */
@@ -54,9 +61,11 @@
 
     border-radius: 50%;
 
-    position: relative;
-    top: 100px;
+    position: absolute;
+    top: 300px;
     left: 27.5%;
+
+    cursor: pointer;
 }
 
 #pandaCoder_5{
@@ -65,9 +74,11 @@
 
     border-radius: 50%;
 
-    position: relative;
-    top: 100px;
-    left: 56.5%;
+    position: absolute;
+    top: 300px;
+    left: 64.75%;
+
+    cursor: pointer;
 }
 
 #pandaCoder_6{
@@ -76,9 +87,11 @@
 
     border-radius: 50%;
 
-    position: relative;
-    top: 160px;
+    position: absolute;
+    top: 450px;
     left: 27.5%;
+
+    cursor: pointer;
 }
 
 #pandaCoder_7{
@@ -87,9 +100,11 @@
 
     border-radius: 50%;
 
-    position: relative;
-    top: 160px;
-    left: 56.5%;
+    position: absolute;
+    top: 450px;
+    left: 64.75%;
+
+    cursor: pointer;
 }
 
 /* 3 Panda Paling Bawah */
@@ -100,9 +115,11 @@
 
     border-radius: 50%;
 
-    position: relative;
-    top: 180px;
+    position: absolute;
+    top: 590px;
     left: 33.5%;
+
+    cursor: pointer;
 }
 
 #pandaCoder_9{
@@ -111,9 +128,11 @@
 
     border-radius: 50%;
 
-    position: relative;
-    top: 230px;
-    left: 39%;
+    position: absolute;
+    top: 650px;
+    left: 46%;
+
+    cursor: pointer;
 }
 
 #pandaCoder_10{
@@ -122,11 +141,13 @@
 
     border-radius: 50%;
 
-    position: relative;
-    top: 180px;
-    left: 43%;
+    position: absolute;
+    top: 590px;
+    left: 58.5%;
+
+    cursor: pointer;
 }
 
-[hidden]{
-    display: none !important;
+#BG{
+    height: 113vh;
 }
