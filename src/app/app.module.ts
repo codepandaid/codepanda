@@ -31,6 +31,7 @@ import { OrderDialogComponent } from './order-dialog/order-dialog.component';
     BrowserAnimationsModule,
     MaterialModule,
     FormsModule,
+    
 
     // For Router or Page Navigation
     RouterModule.forRoot([
@@ -56,8 +57,9 @@ import { OrderDialogComponent } from './order-dialog/order-dialog.component';
 
   ],
   providers: [DataService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
+
 export class AppModule { }
 
 

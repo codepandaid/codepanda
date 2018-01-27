@@ -31,3 +31,4 @@ module.exports = function (config) {
     singleRun: false
   });
 };
+angular.module('MyApp', ['angular-carousel-3d']);
