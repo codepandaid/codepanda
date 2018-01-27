@@ -1,37 +1,110 @@
 
 <div>
-  <mat-card class="container_1" >  
-      <h2 class="BG" >{{ pandaCoder.nama | uppercase }} Characteristic</h2>
-
+  <mat-card class="container_1">  
+      <h2 class="BG" *ngIf="data.id=='01'">VITO RIZKI IMANDA</h2>
+      <h2 class="BG" *ngIf="data.id=='02'">ADAM FIRDAUS</h2>
+      <h2 class="BG" *ngIf="data.id=='03'">NOER WIDYA HERLAMBANG</h2>
+      <h2 class="BG" *ngIf="data.id=='04'">ANDHIKA KARTIKA</h2>
+      <h2 class="BG" *ngIf="data.id=='05'">RYAN AZRIANSYACH</h2>
+      <h2 class="BG" *ngIf="data.id=='06'">PRAMESWARA JEMBAR PANALAR</h2>
+      <h2 class="BG" *ngIf="data.id=='07'">ZULFAHMI IBNU HABIBI</h2>
+      <h2 class="BG" *ngIf="data.id=='08'">NUH SATRIA PUTRA</h2>
+      <h2 class="BG" *ngIf="data.id=='09'">HAFIDLOTUL FATIMAH AHMAD</h2>
+      <h2 class="BG" *ngIf="data.id=='10'">RAKISH FRISKY</h2>
+      
       <div class="container_2">
         <div>
-            <img id="pandaCoder" src="assets/pict/pandaCoder.png"/> 
+            <img *ngIf="data.id=='01'" id="pandaCoder" src="assets/pict/pandaCoder.png"/> 
+            <img *ngIf="data.id=='02'" id="pandaCoder" src="assets/pict/pandaCoder.png"/> 
+            <img *ngIf="data.id=='03'" id="pandaCoder" src="assets/pict/pandaCoder.png"/> 
+            <img *ngIf="data.id=='04'" id="pandaCoder" src="assets/pict/pandaCoder.png"/> 
+            <img *ngIf="data.id=='05'" id="pandaCoder" src="assets/pict/pandaCoder.png"/> 
+            <img *ngIf="data.id=='06'" id="pandaCoder" src="assets/pict/pandaCoder.png"/> 
+            <img *ngIf="data.id=='07'" id="pandaCoder" src="assets/pict/pandaCoder.png"/> 
+            <img *ngIf="data.id=='08'" id="pandaCoder" src="assets/pict/pandaCoder.png"/> 
+            <img *ngIf="data.id=='09'" id="pandaCoder" src="assets/pict/pandaCoder.png"/> 
+            <img *ngIf="data.id=='10'" id="pandaCoder" src="assets/pict/PC-010.JPG"/> 
         </div>
       
-        <div >
+        <div>
           <div>
               <p id="subtitle">ID :</p>
-              <p id="text">{{ selectedPanda.id }}</p>
+              
+              <!-- Data ID PANDA -->
+              <p id="text" *ngIf="data.id=='01'" >PC-001</p>
+              <p id="text" *ngIf="data.id=='02'" >PC-002</p>
+              <p id="text" *ngIf="data.id=='03'" >PC-003</p>
+              <p id="text" *ngIf="data.id=='04'" >PC-004</p>
+              <p id="text" *ngIf="data.id=='05'" >PC-005</p>
+              <p id="text" *ngIf="data.id=='06'" >PC-006</p>
+              <p id="text" *ngIf="data.id=='07'" >PC-007</p>
+              <p id="text" *ngIf="data.id=='08'" >PC-008</p>
+              <p id="text" *ngIf="data.id=='09'" >PC-009</p>
+              <p id="text" *ngIf="data.id=='10'" >PC-010</p>
           </div>
 
           <div>
-              <p id="subtitle">Nama :</p>
-              <p id="text">{{ selectedPanda.nama }}</p>
-          </div>
+              <p id="subtitle">Codename :</p>
+
+              <!-- Data Nama Panda -->
+              <p id="text" *ngIf="data.id=='01'">Alpha Panda</p>
+              <p id="text" *ngIf="data.id=='02'">Adam Firdaus</p>
+              <p id="text" *ngIf="data.id=='03'">Noer Widya Herlambang</p>
+              <p id="text" *ngIf="data.id=='04'">Andhika Kartika</p>
+              <p id="text" *ngIf="data.id=='05'">Ryan Azriansyach</p>
+              <p id="text" *ngIf="data.id=='06'">Prameswara Jembar Panalar</p>
+              <p id="text" *ngIf="data.id=='07'">Zulfahmi Ibnu Habibi</p>
+              <p id="text" *ngIf="data.id=='08'">Nuh Satria Putra</p>
+              <p id="text" *ngIf="data.id=='09'">Hafidlotul Fatimah Ahmad</p>
+              <p id="text" *ngIf="data.id=='10'">Prince of Pandamonium</p>
+            </div>
 
           <div>
               <p id="subtitle">Spesies :</p>
-              <p id="text">{{ selectedPanda.spesies }}</p>
-          </div>
 
-          <div>
+              <!-- Data Spesies Panda -->
+              <p id="text" *ngIf="data.id=='01'">Hungry Panda</p>
+              <p id="text" *ngIf="data.id=='02'">Panda</p>
+              <p id="text" *ngIf="data.id=='03'">Panda</p>
+              <p id="text" *ngIf="data.id=='04'">Panda</p>
+              <p id="text" *ngIf="data.id=='05'">Panda</p>
+              <p id="text" *ngIf="data.id=='06'">Panda</p>
+              <p id="text" *ngIf="data.id=='07'">Panda</p>
+              <p id="text" *ngIf="data.id=='08'">Panda</p>
+              <p id="text" *ngIf="data.id=='09'">Panda</p>
+              <p id="text" *ngIf="data.id=='10'"><i>Imaginary Panda</i></p>
+            </div>
+
+            <div>
               <p id="subtitle">Background Story :</p>
-              <p id="text">{{ selectedPanda.backgroundStory }}</p>
+
+              <!-- Data Latar Panda -->
+              <p id="text" *ngIf="data.id=='01'">Pada suatu hari. . .</p>
+              <p id="text" *ngIf="data.id=='02'">Pada suatu hari. . .</p>
+              <p id="text" *ngIf="data.id=='03'">Pada suatu hari. . .</p>
+              <p id="text" *ngIf="data.id=='04'">Pada suatu hari. . .</p>
+              <p id="text" *ngIf="data.id=='05'">Pada suatu hari. . .</p>
+              <p id="text" *ngIf="data.id=='06'">Pada suatu hari. . .</p>
+              <p id="text" *ngIf="data.id=='07'">Pada suatu hari. . .</p>
+              <p id="text" *ngIf="data.id=='08'">Pada suatu hari. . .</p>
+              <p id="text" *ngIf="data.id=='09'">Pada suatu hari. . .</p>
+              <p id="text" *ngIf="data.id=='10'">A Panda Prince from Pandamonium Emperial Kingdom who started his Journey to search for True Creativity around the Panda Island. He loves to read and write a story from the entire capital with some visualisation.</p>
           </div>
 
           <div>
               <p id="subtitle">Skill :</p>
-              <p id="text">{{ selectedPanda.skill }}</p>
+
+              <!-- Data Skill Panda -->
+              <p id="text" *ngIf="data.id=='01'">Frontend Developer, Pro Eater, Money Maker</p>
+              <p id="text" *ngIf="data.id=='02'">HTML, CSS</p>
+              <p id="text" *ngIf="data.id=='03'">HTML, CSS</p>
+              <p id="text" *ngIf="data.id=='04'">HTML, CSS</p>
+              <p id="text" *ngIf="data.id=='05'">HTML, CSS</p>
+              <p id="text" *ngIf="data.id=='06'">HTML, CSS</p>
+              <p id="text" *ngIf="data.id=='07'">HTML, CSS</p>
+              <p id="text" *ngIf="data.id=='08'">HTML, CSS</p>
+              <p id="text" *ngIf="data.id=='09'">HTML, CSS</p>
+              <p id="text" *ngIf="data.id=='10'">Frontend Developer, Imaginator, Fantasy Writter</p>
           </div>
         </div>        
     </div>

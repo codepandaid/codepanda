@@ -10,6 +10,10 @@
 
 .BG {
     font-weight: bolder;
+    font-size: 3vw;
+
+    margin-top: 1vh;
+
     color: white;
     text-align: center;
     background-color: black;
@@ -25,5 +29,16 @@
 }
 
 #pandaCoder{
+    display: block;
+    margin: auto;
+    margin-top: 5vh;
+
+    position: relative;
+    right: 1.75vw;
+
+    height: 25vw;
+    width: 25vw;
+
     border-radius: 50%;
 }
+

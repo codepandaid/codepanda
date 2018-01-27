@@ -1,0 +1,29 @@
+.container_1 {
+    background-color: black;
+}
+
+.container_2 {
+    display: grid;
+    grid-template-columns: 50% auto;
+    background-color: black;
+}
+
+.BG {
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+    background-color: black;
+}
+
+#subtitle{
+    font-weight: bold;
+    color: white;
+}
+
+#text{
+    color: white;
+}
+
+#pandaCoder{
+    border-radius: 50%;
+}
