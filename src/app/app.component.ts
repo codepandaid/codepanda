@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Inject } from '@angular/core';
 import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material';
 import { OrderDialogComponent } from './order-dialog/order-dialog.component';
 
@@ -18,8 +18,8 @@ export class AppComponent {
 
   title = 'codepanda';
 
-  animal: string;
-  name: string;
+  animal: string='unta';
+  name: string='Vito Rizki Imanda';
 
   constructor(public dialog: MatDialog) {}
 

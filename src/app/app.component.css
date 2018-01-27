@@ -11,6 +11,8 @@
     z-index: 2;
     width: 100%  !important;
 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
   } 
 
   
@@ -59,12 +61,14 @@
   .sloganName {
     font-size: 3vw;
     font-weight: 400;
+    position: relative;
+    top: 1.5vh;
   }
 
   .sloganSlogan{
     font-size: 2vw;
     position: relative;
-    bottom: 1vh;
+    top: 0.5vh;
   }
 
   .orderSlogan{
@@ -83,12 +87,12 @@
   .mat-button{
     padding :0.5vw;
     line-height: 50px;
-    border: 2px solid #332c2b;
+    border: 0.3vw solid #332c2b;
   }
   .logoImg{
     height: 7vw;
     position: relative;
-    top: 2vh;
+    top: 2.5vh;
   }
   
   .example-icon {

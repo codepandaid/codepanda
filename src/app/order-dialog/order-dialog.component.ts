@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
 
 @Component({
@@ -8,7 +8,11 @@ import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
 })
 export class OrderDialogComponent implements OnInit {
 
-  constructor(public dialog: MatDialog) { }
+  name:any;
+
+  constructor(public dialog: MatDialog, 
+    public dialogRef: MatDialogRef<OrderDialogComponent>,
+    @Inject(MAT_DIALOG_DATA) public data: any) {    }
 
   ngOnInit() {
   }
